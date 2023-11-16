@@ -6,7 +6,7 @@ Goal: The player must guess the phrase before their 6 attempts run out.
 
 Gameplay:
 
-  1. Before the game starts, the player is asked to enter (a) a path to a word file and (b) a position (index) for a word in the file.
+  1. Before the game starts, the player is asked to enter (a) a path to a words file and (b) a position (index) for a word in the file.
 
   2. Based on the player's input, the game selects the corresponding word from the file as the secret phrase.
 
