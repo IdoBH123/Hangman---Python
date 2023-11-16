@@ -108,14 +108,15 @@ def choose_word(file_path, index):
     """
     str_words = ""
     with open(file_path, "r") as input_file:
-        str_words = input_file.read()
-    list_words = list(str_words.split(" "))
-    if len(list_words) < index - 1:
-        calc = index % len(list_words)
-        hide_word = list_words[calc - 1]
+        words_list = [line.rstrip() for line in input_file]  # option for word per line
+        ##str_words = input_file.readlines()   # option for long list words
+    ##list_words = list(str_words.split(" "))
+    if len(words_list) < index - 1:
+        calc = index % len(words_list)
+        hide_word = words_list[calc - 1]
 
     else:
-        hide_word = list_words[index - 1]  ##the word need to guess
+        hide_word = words_list[index - 1]  # the word need to guess
 
     return hide_word
 
