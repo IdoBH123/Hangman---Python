@@ -122,6 +122,7 @@ def choose_word(file_path, index):
 
 
 def main():
+    # this path for the welcome screen need to change it according to your path document
     with open(r'C:\Users\עידו בן הרוש\PycharmProjects\pythonProject\welcome_screen.txt', "r") as welcome_file:
         print(welcome_file.read())
 
